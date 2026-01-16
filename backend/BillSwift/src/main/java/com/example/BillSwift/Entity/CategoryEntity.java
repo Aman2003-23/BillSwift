@@ -15,7 +15,8 @@ import java.sql.Timestamp;
 @Table(name = "tbl_category")
 @Builder
 @Data
-
+@NoArgsConstructor
+@AllArgsConstructor
 public class CategoryEntity {
 
     @Id

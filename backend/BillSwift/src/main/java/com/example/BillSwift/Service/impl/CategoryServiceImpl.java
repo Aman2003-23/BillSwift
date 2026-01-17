@@ -3,17 +3,14 @@ package com.example.BillSwift.Service.impl;
 import com.example.BillSwift.Entity.CategoryEntity;
 import com.example.BillSwift.Repository.CategoryRepository;
 import com.example.BillSwift.Service.CategoryService;
-import com.example.BillSwift.Service.FileUploadService;
 import com.example.BillSwift.io.CategoryRequest;
 import com.example.BillSwift.io.CategoryResponse;
-import jdk.jfr.Category;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -30,7 +27,7 @@ public class CategoryServiceImpl  implements CategoryService {
 
     @Autowired
     private final CategoryRepository categoryRepository;
-    private final FileUploadService fileUploadService;
+
 
     @Override
     public CategoryResponse add(CategoryRequest request, MultipartFile file) throws IOException {

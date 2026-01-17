@@ -1,7 +1,9 @@
+import React from 'react';
+import Menubar from './components/Menubar/Menubar.jsx'
 const App=()=>{
   return (
     <div>
-      <h1>BillSwift</h1>
+      <Menubar />
     </div>
   )
 }

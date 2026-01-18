@@ -1,0 +1,8 @@
+const CategoryList=()=>{
+    return(
+        <div>
+            <h1>Welcome to the Category List Page</h1>
+        </div>
+    )
+}
+export default CategoryList;

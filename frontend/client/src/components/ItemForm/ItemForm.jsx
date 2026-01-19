@@ -1,6 +1,7 @@
-const CategoryForm=()=>{
+const ItemForm = () => {
     return(
-        <div className="mx-2 mt-2">
+        <div className="item-form-container" style={{height:'101vh', overflowY: 'auto', overflowX:'hidden'}}>
+            <div className="mx-2 mt-2">
             <div className="row">
                 <div className="card col-md-8 form-container">
                     <div className="card-body">
@@ -13,23 +14,34 @@ const CategoryForm=()=>{
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="name" className="form-label">Name</label>
-                                <input type="text" name="name" id="name" className="form-control" placeholder="Category Name"/>
+                                <input type="text" name="name" id="name" className="form-control" placeholder="Item Name"/>
                             </div>
+                             <div className="mb-3">
+                                <label htmlFor="category" className="form-label">Category</label>
+                                <select name="category" id="category" className="form-control">
+                                    <option value="">***SELECT CATEGORY***</option>
+                                    <option value="category 1">category 1</option>
+                                    <option value="category 2">category 2</option>
+                                </select>
+                             </div>
+
+                             <div className="mb-3">
+                                <label htmlFor="price" className="form-label">Price</label>
+                                <input type="number"  name="price" id="price" className="form-control" placeholder="&#8377;200.00"/>
+                             </div>
+                            
                             <div className="mb-3">
                                 <label htmlFor="description" className="form-label">Description</label>
                                 <textarea rows="5" type="text" name="description" id="description" className="form-control" placeholder="Write Content here"></textarea>
                             </div>
-                            <div className="mb-3">
-                                <label htmlFor="bgColor" className="form-label">Background Color</label>
-                                <br />
-                                <input type="color" name="bgColor" id="bgColor" placeholder="#ffffff" />
-                            </div>
+                            
                             <button type="submit" className="btn btn-warning w-100">Save</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     )
-}
-export default CategoryForm;
+}   
+export default ItemForm;

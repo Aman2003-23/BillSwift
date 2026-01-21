@@ -6,12 +6,14 @@ import Explore from './pages/Explore/Explore.jsx';
 import ManageUsers from './pages/ManageUsers/ManageUsers.jsx';
 import ManageCategory from './pages/ManageCategory/ManageCategory.jsx';
 import ManageItems from './pages/ManageItems/ManageItems.jsx';
+import { Toaster } from 'react-hot-toast'; 
 
 
 const App=()=>{
   return (
     <div>
       <Menubar />
+      <div><Toaster /></div>
       <Routes>  
         <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />

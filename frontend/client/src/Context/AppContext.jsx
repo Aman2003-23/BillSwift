@@ -15,6 +15,7 @@ export const AppContextProvider =(props) =>{
          }
          loadData();
     }, []);
+    
     const contextValue={
         categories,
         setCategories
